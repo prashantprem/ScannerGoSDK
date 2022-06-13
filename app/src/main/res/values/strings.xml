@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">ScannerGoSDK</string>
+    <string name="single_screen">Single Screen</string>
+    <string name="multiple_screen">Multiple Screen</string>
+    <string name="front_and_back">Front &amp; Back</string>
+    <string name="qr">QR</string>
+    <string name="id_card">ID CARD</string>
+    <string name="next">Next</string>
+    <string name="edit_and_reorder_on_next_page">Edit &amp; reorder on next page</string>
+    <string name="rotate">Rotate</string>
+    <string name="retake_this_page">Retake this Page</string>
+    <string name="no_crop">No Crop</string>
+    <string name="delete_page">Delete Page</string>
+    <string name="add_page">Add Page</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="you_want_to_delete_this_page">You want to delete this page.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="save_path">folder/Ruth Document</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="filters">Filters</string>
+    <string name="watermark">Watermark</string>
+    <string name="security">Security</string>
+    <string name="compress">Compress</string>
+    <string name="add_text">Add Text</string>
+    <string name="make_text">Make text</string>
+    <string name="all_pages">All Pages</string>
+    <string name="reorder">Reorder</string>
+    <string name="rotate_page">Rotate Page</string>
+    <string name="apply_to_all_pages">Apply to all pages</string>
+    <string name="set_pin">Set Pin</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password_hint">****</string>
+    <string name="file_saved_successfully">File Saved Successfully</string>
+    <string name="file_name_and_location">File Name &amp; Location</string>
+    <string name="file_name">File Name</string>
+    <string name="file_name_hint">Ruth Document</string>
+    <string name="set_file_location">Set File Location</string>
+    <string name="placeholder_file_location">Camscanner/folder one/folder/Routh Document</string>
+    <string name="save_on_cloud">Save on Cloud</string>
+    <string name="add_watermark">Add Watermark</string>
+    <string name="done">Done</string>
+
+
+
+
+
+
+
+</resources>
