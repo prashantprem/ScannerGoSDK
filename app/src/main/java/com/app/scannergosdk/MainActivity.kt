@@ -34,10 +34,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         PDFBoxResourceLoader.init(applicationContext)
         if (PermissionUtils.isPermission(PERMISSION_EXTERNAL, this)) {
             Log.d("Permission","Granted")
-            Utils.copy(
-                this.assets.open("watermark.pdf"),
-                FileOutputStream(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "watermark.pdf"))
-            )
+            createWaterMarkPdf()
         }
         btnGeneratePdf = findViewById(R.id.generatePdf)
         btnSelectImages = findViewById(R.id.selectImages)
@@ -89,6 +86,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         if (requestCode == PERMISSION_EXTERNAL) {
             if (grantResults.isNotEmpty() && permissions[0] == Manifest.permission.WRITE_EXTERNAL_STORAGE) {
                 if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    createWaterMarkPdf()
 
                 } else {
                     PermissionUtils.isPermission(PERMISSION_EXTERNAL, this)
@@ -101,10 +99,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(requestCode == PERMISSION_EXTERNAL){
-            Utils.copy(
-                this.assets.open("watermark.pdf"),
-                FileOutputStream(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "watermark.pdf"))
-            )
+            createWaterMarkPdf()
         }
+    }
+
+    private fun createWaterMarkPdf(){
+        Utils.copy(
+            this.assets.open("watermark.pdf"),
+            FileOutputStream(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "watermark.pdf"))
+        )
     }
 }
